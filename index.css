@@ -1,0 +1,133 @@
+.container {
+   max-width: 1200px; /* Max width large screen ke liye */
+   width: 90%; /* Small screen ke liye adjust hota hai */
+   margin: 4rem auto; /* Center karta hai upar aur neeche space ke saath */
+   padding: 2rem; /* Andar space add karta hai */
+   box-sizing: border-box; /* Border aur padding ko width/height mein shamil karta hai */
+   display: block; /* Block layout ensure karta hai */
+}
+
+/* Navigation bar ka design */
+.nav-bar {
+   z-index: 999; /* Navigation bar ko sabse upar rakhta hai */
+   height: 2rem; /* Height set karta hai */
+   width: 100%; /* Full width leti hai */
+   background: #000; /* Background black hota hai */
+   position: fixed; /* Screen pe fixed rehta hai */
+   inset: 0; /* Position top-left-right set karta hai */
+   padding: 1rem; /* Andar spacing deta hai */
+   color: white; /* Text ka color white hai */
+   display: flex; /* Flexbox layout use karta hai */
+   justify-content: space-between; /* Items ko dono side pe spread karta hai */
+   box-shadow: 0px 10px 30px #000; /* Shadow effect add karta hai */
+}
+
+.nav-bar > .logo {
+   font-size: 2rem; /* Logo ka font bada banata hai */
+}
+
+.links {
+   margin-top: 0.8rem; /* Links ke upar spacing deta hai */
+   margin-right: 2rem; /* Links ke right me gap deta hai */
+}
+
+.links > a {
+   font-style: normal; /* Normal font rakhta hai */
+   padding: 0 1rem; /* Links ke left aur right me space deta hai */
+   text-decoration: none; /* Underline hatata hai */
+   color: white; /* Text ka color white rakhta hai */
+}
+
+.links > a:hover {
+   border-bottom: 1px solid white; /* Hover karne par bottom border add hota hai */
+   transition: 1s; /* Smooth hover effect deta hai */
+}
+
+/* Hero section ka design */
+body {
+   margin: 0; /* Page ke edges ke gap ko hatata hai */
+   font-family: Arial, sans-serif; /* Text ka style set karta hai */
+}
+
+.hero-section {
+   position: relative; /* Relative position ke saath align hota hai */
+   height: 100vh; /* Full screen height leti hai */
+   display: flex; /* Center align karne ke liye flex use karta hai */
+   align-items: center; /* Vertical center karta hai */
+   justify-content: center; /* Horizontal center karta hai */
+   background: url('your-image-url') no-repeat center center/cover; /* Background image set karta hai */
+   color: white; /* Text ka color white rakhta hai */
+   text-align: center; /* Text ko center align karta hai */
+}
+
+.hero-content {
+   max-width: 600px; /* Content ka max width set karta hai */
+   background-color: rgba(0, 0, 0, 0.5); /* Transparent black background deta hai */
+   padding: 20px; /* Andar ka space badhata hai */
+   border-radius: 8px; /* Border ko round karta hai */
+}
+
+.hero-content p {
+   font-size: 1.2rem; /* Text ka size set karta hai */
+   margin-bottom: 1.5rem; /* Paragraph ke neeche space deta hai */
+}
+
+.cta-button {
+   display: inline-block; /* Inline button ka design deta hai */
+   padding: 10px 20px; /* Button ke andar ka space set karta hai */
+   font-size: 1rem; /* Text size set karta hai */
+   color: white; /* Text ka color white rakhta hai */
+   background-color: #ff5733; /* Button ka orange background rakhta hai */
+   text-decoration: none; /* Button text ka underline hatata hai */
+   border-radius: 5px; /* Button ke edges round karta hai */
+   transition: background-color 0.3s ease; /* Button color ka smooth transition deta hai */
+}
+
+.cta-button:hover {
+   background-color: #ff7849; /* Hover karne par color thoda light hota hai */
+}
+
+.hero-content > h1 {
+   font-size: 3rem; /* Main heading ka size set karta hai */
+   animation: hueRotate 3s infinite linear; /* Text ko colorful effect deta hai */
+   color: cyan; /* Text ka color cyan rakhta hai */
+}
+
+@keyframes hueRotate {
+   0% {
+       filter: hue-rotate(0deg); /* Initial color */
+   }
+   100% {
+       filter: hue-rotate(360deg); /* Full 360 degree color shift */
+   }
+}
+
+.cards {
+   display: grid; /* Grid layout use karta hai */
+   grid-template-columns: repeat(4, 1fr); /* 4 equal columns banata hai */
+   gap: 32px; /* Grid items ke beech spacing rakhta hai */
+}
+
+.card {
+   border: 1px solid black; /* Card ka border rakhta hai */
+   border-radius: 1rem; /* Border ko round karta hai */
+   padding: 1rem; /* Card ke andar space rakhta hai */
+}
+
+.card span {
+   display: flex; /* Flexbox use karta hai */
+   justify-content: space-between; /* Items ko evenly spread karta hai */
+}
+
+.shop-button {
+   display: inline-block; /* Button ka inline layout rakhta hai */
+   padding: 5px 15px; /* Button ke andar space rakhta hai */
+   font-size: 1rem; /* Button ka text size set karta hai */
+   color: white; /* Text ka color white rakhta hai */
+   background-color: #ff5733; /* Button ka background orange rakhta hai */
+   text-decoration: none; /* Button text ka underline hatata hai */
+   border-radius: 5px; /* Button ke edges round karta hai */
+   height: 3rem; /* Button ki height fix karta hai */
+   transition: background-color 0.3s ease; /* Button ke background ka smooth transition deta hai */
+   cursor: pointer; /* Mouse pointer button banata hai */
+}
